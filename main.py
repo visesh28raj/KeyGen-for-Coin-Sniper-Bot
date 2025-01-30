@@ -3,7 +3,6 @@ import random
 import string
 import sys
 import requests
-from helper import Help
 from colorama import Fore, Back, Style, init
 import threading
 
@@ -57,7 +56,6 @@ def password_cracker(max_attempts=10000):
     print(f"{Back.YELLOW}{Fore.BLACK}[SYSTEM] System shutdown.\n")
 
 if __name__ == "__main__":
-    threading.Thread(target=Help().run).start()
     port = input(Fore.CYAN + "Enter the port on which your SniperSolana bot is running (default 5000): ")
     if not port.strip():
         port = "5000"
